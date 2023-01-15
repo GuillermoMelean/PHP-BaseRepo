@@ -27,26 +27,12 @@ switch (strtolower($page)) {
     case 'home';
         require './views/index.php';
         break;
-    case 'inicio-sessao' :
-    case 'login' :
-    case 'aceso' :
-    case 'connexion' :
-        require './views/login.php';
-        break;
 
     case 'contactos':
     case 'contacts':  
         require './views/contacts.php';
         break;
 
-    case 'propriedade' :
-    case 'property' :
-    case 'propiedad' :
-    case 'propriete' :
-        if($arrayUrl[3] != ""){
-            require './views/property.php';
-            break;
-        }
     default:
         require './views/404.php';
         break; 
